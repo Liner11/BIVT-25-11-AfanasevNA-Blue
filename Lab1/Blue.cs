@@ -104,8 +104,7 @@ namespace Lab1
 
             // code here
             int sum = (int)Math.Floor((double)a / 2) + (int)Math.Floor((double)b / 2) + (int)Math.Floor((double)c / 2);
-            int trp = sum / 3;
-            if (trp * 3 == sum || ( ( (sum - trp*2) + 1 ) + trp*2 ) == sum) answer = true;
+            if (sum % 3 == 0 || sum % 3 == 2) answer = true;
             // end
 
             return answer;
